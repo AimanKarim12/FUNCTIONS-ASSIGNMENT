@@ -21,22 +21,23 @@ def indexof(aList, item):
 
 print("INDEX OF ASSIGNMENT") 
 #LETTER IS ON LIST
-list = ['A', 'B', 'C', 'D']
+aList = ['A', 'B', 'C', 'D']
 selected = 'C'
-
-if indexof(list, selected):
-    print(f"Letter is found on list: {selected}")
-else:
-    print("Letter is not on list")
-
 #LETTER IS NOT ON LIST 
 list = ['A', 'B', 'C', 'D']
-selected = 'Z'
+selected2 = 'Z'
 
-if indexof(list, selected):
-    print("Letter is found")
-else:
+def indexOf():
+  if indexof(aList, selected):
+    print(f"Letter is found on list: {selected}")
+  else:
     print("Letter is not on list")
+
+  if indexof(list, selected2):
+    print("Letter is found")
+  else:
+    print("Letter is not on list")
+indexOf()
 
 #REVERSE
 aList = [1, 2, 3, 4]
@@ -65,6 +66,10 @@ print(aList)
 aList = [4, 3, 2, 1]
 
 print("INDEX OF MIN ASSIGNMENT")
+
+def indexmin():
+  print(min(aList))
+indexmin()
 
 def indexmin():
   print(min(aList))
