@@ -1,4 +1,3 @@
-
 #FUNCTIONS ASSIGNMENT
 
 #CONTAINS
@@ -63,14 +62,11 @@ print("SWAP ASSIGNMENT")
 print(aList)
 
 #INDEXOFMIN
-aList = [4, 3, 2, 1]
+def indexofmin(array, x):
 
-print("INDEX OF MIN ASSIGNMENT")
+	minpos = array.index(min(array))
 
-def indexmin():
-  print(min(aList))
-indexmin()
+	print ("position of minimum at", minpos + 1)
 
-def indexmin():
-  print(min(aList))
-indexmin()
+array = [4, 3, 2, 1]
+indexofmin(array, len(array))
