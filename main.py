@@ -13,31 +13,12 @@ print(contains([1, 2, 3, 4], 5))
 
 #INDEXOF 
 def indexof(aList, item):
-  for el in aList:
-    if el == item:
+  for [i] in range(len(aList)):
+    if [i] == item:
       return True
   return False
 
-print("INDEX OF ASSIGNMENT") 
-#LETTER IS ON LIST
-aList = ['A', 'B', 'C', 'D']
-selected = 'C'
-#LETTER IS NOT ON LIST 
-list = ['A', 'B', 'C', 'D']
-selected2 = 'Z'
-
-def indexOf():
-  if indexof(aList, selected):
-    print(f"Letter is found on list: {selected}")
-  else:
-    print("Letter is not on list")
-
-  if indexof(list, selected2):
-    print("Letter is found")
-  else:
-    print("Letter is not on list")
-indexOf()
-
+print (aList[i])
 #REVERSE
 aList = [1, 2, 3, 4]
 
@@ -70,3 +51,6 @@ def indexofmin(array, x):
 
 array = [4, 3, 2, 1]
 indexofmin(array, len(array))
+
+
+
