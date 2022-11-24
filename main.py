@@ -8,11 +8,15 @@ def contains(aList, item):
   return False
 
 #INDEXOF 
-#def indexof(aList, item):
-#  for [i] in range(len(aList)):
-#    if [i] == item:
-#      return True
-#  return False
+aList = [1, 3 , 4, 6]
+item = 3
+
+def indexof(aList, item):
+  for i in range(len(aList)):
+    if [i] == item:
+      return i
+  return -1
+print(indexof)
 
 #REVERSE
 #def reverse(list):
@@ -39,14 +43,18 @@ def contains(aList, item):
 #aList = [1, 3, 2, 4, 6]
 
 
-#def indexOfMin(aList, x):
-#    mvalue = aList[0]
-#    mindex = 0
-#    for i in range(1, x):
-#      if (aList[i] < mvalue):
-#        mvalue = aList[i]
-#        mindex = i
+def indexOfMin(aList):
+    mindex = 0
+    for i in range(1, len(aList)):
+      if (aList[i] < mvalue):
+        mvalue = aList[i]
+        mindex = i
       
-#    return mindex
+    return mindex
+
+aList = [2, 1 , 4, 5]
+
+print(indexOfMin)
+
 
 
