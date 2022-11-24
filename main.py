@@ -7,50 +7,46 @@ def contains(aList, item):
       return True
   return False
 
-print("CONTAINS ASSIGNMENT")
-print(contains([1, 2, 3, 4], 2))
-print(contains([1, 2, 3, 4], 5))
-
 #INDEXOF 
-def indexof(aList, item):
-  for [i] in range(len(aList)):
-    if [i] == item:
-      return True
-  return False
+#def indexof(aList, item):
+#  for [i] in range(len(aList)):
+#    if [i] == item:
+#      return True
+#  return False
 
-print (aList[i])
 #REVERSE
-aList = [1, 2, 3, 4]
+#def reverse(list):
 
-def reverse(values):
-    return values[::-1]
-
-print("REVERSE ASSIGNMENT")
-print(reverse(aList))
+#    i = 1
+#    for value in list:
+#       reversed.append(list[len(list) - i])
+#    i += 1
+#    return reversed
 
 #SWAP
-aList = [1, 2, 3, 4]
+#def swap(aList, idx1, idx2):
+#  aList[idx1], aList[idx2] = aList[idx2], aList[idx1]
+#  return aList
 
-def swap():
-  index1, index2 = 2, 3
+#aList = [1, 2, 3, 4, 5]
+#idx1, idx2 = 1,2
 
-  before, after = aList.index(index1), aList.index(index2)
+#print(swap(aList, idx2, idx1))
 
-  aList[before], aList[after] = aList[after], aList[before]
-swap()
-
-print("SWAP ASSIGNMENT")
-print(aList)
 
 #INDEXOFMIN
-def indexofmin(array, x):
 
-	minpos = array.index(min(array))
+#aList = [1, 3, 2, 4, 6]
 
-	print ("position of minimum at", minpos + 1)
 
-array = [4, 3, 2, 1]
-indexofmin(array, len(array))
-
+#def indexOfMin(aList, x):
+#    mvalue = aList[0]
+#    mindex = 0
+#    for i in range(1, x):
+#      if (aList[i] < mvalue):
+#        mvalue = aList[i]
+#        mindex = i
+      
+#    return mindex
 
 
