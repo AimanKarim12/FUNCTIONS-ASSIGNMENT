@@ -8,24 +8,19 @@ def contains(aList, item):
   return False
 
 #INDEXOF 
-aList = [1, 3 , 4, 6]
-item = 3
-
-def indexof(aList, item):
-  for i in range(len(aList)):
-    if [i] == item:
-      return i
-  return -1
-print(indexof)
+def indexOf(aList, item):
+  #ADD A COUNTER
+    for i, element in enumerate(aList):
+        if element == item:
+            return i
+    return -1
 
 #REVERSE
-#def reverse(list):
-
-#    i = 1
-#    for value in list:
-#       reversed.append(list[len(list) - i])
-#    i += 1
-#    return reversed
+def reverse(aList):
+    reversedList = []
+    for i in range(len(aList)-1, -1, -1):
+        reversedList.append(aList[i])
+    return reversedList
 
 #SWAP
 #def swap(aList, idx1, idx2):
@@ -44,17 +39,11 @@ print(indexof)
 
 
 def indexOfMin(aList):
-    mindex = 0
-    for i in range(1, len(aList)):
-      if (aList[i] < mvalue):
-        mvalue = aList[i]
-        mindex = i
-      
-    return mindex
-
-aList = [2, 1 , 4, 5]
-
-print(indexOfMin)
-
+    minIndex = 0
+    #ADD A COUNTER
+    for i, element in enumerate(aList):
+        if element < aList[minIndex]:
+            minIndex = i
+    return minIndex
 
 
